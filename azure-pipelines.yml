@@ -15,7 +15,15 @@ steps:
     versionSpec: '16.x'
   displayName: 'Install Node.js'
 
+- task: aliencube.netlify-cli-extensions.deploy-task.deploy@1
+  displayName: 'Deploy to Netlify'
+  inputs:
+    authToken: 'fSMDCmHG1s_E6FJJD0K-c3ITu4tvYAwR4NCa2Cx3zzk'
+    siteId: '9b0eaa59-2df1-4925-a8d6-c29c04ee073a'
+
 - script: |
     yarn install
     yarn build
   displayName: 'npm install and build'
+
+
