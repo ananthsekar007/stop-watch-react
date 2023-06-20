@@ -18,7 +18,7 @@ steps:
 - script: |
     yarn install
     yarn cache clean
-    yarn build
+    CI=false yarn build
   displayName: 'npm install and build'
 
 - task: aliencube.netlify-cli-extensions.deploy-task.deploy@1
