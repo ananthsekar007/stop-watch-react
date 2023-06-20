@@ -17,6 +17,7 @@ steps:
 
 - script: |
     yarn install
+    yarn cache clean
     yarn build
   displayName: 'npm install and build'
 
