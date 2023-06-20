@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-3xl font-bold mb-4">Stopwatch</h1>
+      <h1 className="text-3xl font-bold mb-4">Stopwatch by Ananth</h1>
       <h2 className="text-5xl mb-8">{formatTime(elapsedTime)}</h2>
       <div className="space-x-4">
         <button
